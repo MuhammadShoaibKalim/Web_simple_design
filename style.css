@@ -1,0 +1,311 @@
+/* Default styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: justify;
+    background: #000;
+    width: 100%;
+    height: 80px;
+  }
+  
+  .navbar .logo {
+    color: white;
+    font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin-left: 150px;
+  }
+  
+  .navbar .logo a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  a span {
+    color: red;
+    text-decoration: none;
+  }
+  
+  .menu nav ul {
+    display: flex;
+    padding-bottom: 10px;
+    padding-top: 25px;
+  }
+  
+  .menu nav ul li {
+    margin-right: 50px;
+  }
+  
+  .menu nav ul li a {
+    padding: 12px;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .menu nav ul li a span {
+    color: red;
+    
+  }
+  
+  .menu nav ul li a span:hover {
+    background: red;
+    border-radius: 2px;
+  }
+  
+  .menu nav ul li a:hover {
+    background: white;
+    color: red;
+  }
+  
+  .showcase {
+    background-color: darkgray;
+    width: 100%;
+    padding-top: 100px;
+    height: 400px;
+  }
+  
+  .showcase h1 {
+    text-align: center;
+    color: white;
+  }
+  
+  .showcase p {
+    color: white;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .news {
+    display: flex;
+    background: rgb(188, 184, 184);
+    height: 100px;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 20px;
+  }
+  
+  .name {
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+  }
+  
+  .search {
+    font-size: 40px;
+    margin-right: 30px;
+  }
+  
+  #btn {
+    font-size: 20px;
+    background: red;
+    color: white;
+    border: 0.5px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  #search {
+    font-size: 20px;
+    border: 2px solid transparent;
+    border-radius: 3px;
+  }
+  
+  .services {
+    justify-content: space-around;
+    display: flex;
+    padding-top: 10px;
+    background: rgb(226, 222, 222);
+  }
+  
+  .box1 {
+    justify-content: center;
+  }
+  
+  .services p,
+  h3,
+  img {
+    text-align: center;
+  }
+  
+  .services img {
+    margin-left: 100px;
+    padding-bottom: 4px;
+  }
+  
+  .footer {
+    justify-content: center;
+    text-align: center;
+    background: red;
+    width: 100%;
+    height: 75px;
+  }
+  
+  .footer p {
+    font-size: 20px;
+    font-weight: 100px;
+    padding-top: 5px;
+    color: white;
+  }
+  
+  .footer .icon {
+    font-size: 30px;
+    word-spacing: 20px;
+  }
+  
+  /* Media queries */
+  
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+  
+    .navbar .logo {
+      margin: 0;
+      text-align: center;
+    }
+  
+    .navbar .menu {
+      margin-top: 20px;
+    }
+  
+    .menu nav ul {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+  
+    .menu nav ul li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .showcase {
+      height: 300px;
+    }
+  
+    .news {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+  
+    .name {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .search {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    #search {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .services {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .services .box1 {
+      margin-bottom: 30px;
+    }
+  
+    .services img {
+      margin-left: 0;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .navbar{
+      height: auto;
+    }
+  
+    .navbar .logo {
+      margin: 0;
+      text-align: center;
+      font-size: 24px;
+    }
+  
+    .navbar .menu {
+      margin-top: 10px;
+    }
+  
+    .menu nav ul li {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+  
+    .menu nav ul li a {
+      font-size: 24px;
+    }
+  
+    .showcase {
+      height: 200px;
+    }
+  
+    .news {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+  
+    .name {
+      margin: 10px 0;
+      font-size: 24px;
+    }
+  
+    .search {
+      font-size: 24px;
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+  
+    #search {
+      width: 100%;
+      max-width: 250px;
+      font-size: 16px;
+    }
+  
+    .services {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .services .box1 {
+      margin-bottom: 20px;
+    }
+  
+    .services p,
+    h3,
+    img {
+      font-size: 16px;
+      
+    }
+  
+    .footer p {
+      font-size: 16px;
+      
+    }
+  
+    .footer .icon {
+      font-size: 24px;
+      word-spacing: 10px;
+    }
+  }
